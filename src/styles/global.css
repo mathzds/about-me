@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: rgb(var(--foreground-rgb));
+    background: rgb(0, 0, 0);
+    overflow-x: hidden;
+    cursor: crosshair;
+    user-select: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h1, h2, h3, p, a {
+    cursor: crosshair; 
+    text-decoration: none; 
+    color: #fff;
+}
